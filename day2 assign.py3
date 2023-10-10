@@ -1,0 +1,10 @@
+n=int(input("enter sno:"))
+k=input("enter sname: ")
+l=input("enter sgroup: ")
+a=int(input("enter sub1 marks: "))
+b=int(input("enter sub2 marks: "))
+c=int(input("enter sub3 marks: "))
+total=a+b+c
+average=(a+b+c)/3
+print("total marks= ",total)
+print("average marks=",average)
