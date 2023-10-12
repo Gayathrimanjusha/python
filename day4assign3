@@ -1,0 +1,2 @@
+n=int(input("enter value of n:"))
+print("positive num") if n>=0 else print("negative num")
