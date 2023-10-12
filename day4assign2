@@ -1,0 +1,20 @@
+sno=int(input("enter student number:"))
+sname=input("enter student name:")
+sgroup=input("enter student group:")
+s1=int(input("enter java marks :"))
+s2=int(input("enter python marks:"))
+s3=int(input("enter c-lan marks:"))
+total=s1+s2+s3
+avg=(s1+s2+s3)//3
+if avg>=90:
+    print("GRADE-O")
+elif avg>=80:
+    print("GRADE-A")
+elif avg>=70:
+    print ("GRADE-B")
+elif avg>=60:
+    print("GRADE-C")
+elif avg>=50:
+    print("GRADE-D")
+else:
+    print("pass")
