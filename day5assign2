@@ -1,0 +1,32 @@
+soaps=50
+handwash=150
+perfume=250
+print('**Welcome to fair mall**')
+cname=input('Enter name:')
+cpno=input('Enter phone number:')
+s=int(input('Enter no of soaps:'))
+m=int(input('Enter no of handwash:'))
+p=int(input('Enter no of perfumes:'))
+pc=input('Enter promo code:')
+bill=(soaps*s)+(handwash*m)+(perfume*p)
+if pc=='SUNDAY':
+    disc=bill*40/100
+elif bill>=2000:
+    disc=bill*20/100
+elif bill>=1000:
+    disc=bill*10/100
+elif bill>=500:
+    disc=bill*5/100
+else:
+    disc=bill*3/100
+tbill=bill-disc
+gst=tbill*12/100
+obill=tbill+gst
+print('customer name:',cname)
+print('customer phone number :',cpno)
+print('bill:',bill)
+print('discount:',disc)
+print('gst 12%:',gst)
+print('bill to be paid:',obill)
+print('**Thank you: Visit Again**')
+
